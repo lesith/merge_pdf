@@ -16,7 +16,7 @@ def merge_pdfs(paths, output):
 
 if __name__ == '__main__':
     paths = []  # List for storing file paths
-    directory = input('Input directory path to the PDF files to be merged: ')
+    directory = input('Input directory path: ')
     with os.scandir(directory) as entries:
         for entry in entries:
             print(entry.name)
